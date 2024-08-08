@@ -11,7 +11,6 @@
 <!--header section including the navigation menu-->
 <header aria-label="Header Section">
     <nav class="navbar" role="navigation">
-
         <div class="header-brand">
             <img alt="Raycast Logo" src="./raycast-assets/svgs/logo/logo-raycast-full.svg"
                  srcset="">
@@ -75,7 +74,7 @@
                 v.1.73.2 | macOS 12+ | Install via homebrew
             </div>
             <button class="btn-more"><b class="text-primary">More AI models</b> <span
-                    class="text-secondary">| Read more</span> <img
+                    class="text-secondary">| Read more &rightarrow;</span> <img
                     alt="" src="raycast-assets/svgs/icon/icon-arrow-right.svg"></button>
         </div>
     </section>
@@ -90,43 +89,99 @@
             </button>
         </div>
         <div id="advantage-image-container">
-            <div class="key-cap">
-                <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-clock.svg">
-                <p class="text-primary">Fast. <span class="text-secondary">Think in milliseconds.</span></p>
-            </div>
-            <div class="key-cap">
-                <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-command.svg">
-                <p class="text-primary">Ergonomic. <span>Keyboard first.</span></p>
+            <div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">~</div>
+                    <div class="text-primary">`</div>
+                </div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">!</div>
+                    <div class="text-primary">1</div>
+                </div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">@</div>
+                    <div class="text-primary">2</div>
+                </div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">#</div>
+                    <div class="text-primary">3</div>
+                </div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">$</div>
+                    <div class="text-primary">4</div>
+                </div>
             </div>
 
-            <div class="key-cap">
-                <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-apple-stroke.svg">
-                <p class="text-primary">Native. <span class="text-secondary">Pure performance.</span></p>
+            <div>
+                <div class="key-cap key-cap-empty">
+                    <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-tab.svg">
+                </div>
+                <div class="key-cap key-cap-border">
+                    <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-clock.svg">
+                    <p class="text-primary">Fast. <span class="text-secondary">Think in milliseconds.</span></p>
+                </div>
+                <div class="key-cap  key-cap-border">
+                    <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-command.svg">
+                    <p class="text-primary">Ergonomic. <span class="text-secondary">Keyboard first.</span></p>
+                </div>
             </div>
 
-            <div class="key-cap">
-                <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-bug.svg">
-                <p class="text-primary">Reliable.<span class="text-secondary">99.8% crash free rate</span></p>
+            <div>
+                <div class="key-cap  key-cap-border">
+                    <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-apple-stroke.svg">
+                    <p class="text-primary">Native. <span class="text-secondary">Pure performance.</span></p>
+                </div>
+
+                <div class="key-cap  key-cap-border">
+                    <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-bug.svg">
+                    <p class="text-primary">Reliable.<span class="text-secondary">99.8% crash free rate</span></p>
+                </div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">S</div>
+                </div>
+
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">D</div>
+                </div>
+            </div>
+
+            <div>
+                <div class="key-cap key-cap-empty">
+                    <img alt="" src="./raycast-assets/svgs/keyboard/keyboard-shift.svg">
+                </div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">~</div>
+                    <div class="text-primary">`</div>
+                </div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">Z</div>
+                </div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">X</div>
+                </div>
+                <div class="key-cap key-cap-small">
+                    <div class="text-primary">Y</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!--    extension section-->
-    <section aria-label="Section About Extension">
+    <section aria-label="Section About Extension" id="extension-section">
         <div id="extension-top">
             <div>
                 <b class="text-primary">There's an extension for that</b>
                 <div class="text-secondary">Use your favourite tools without even opening them</div>
             </div>
             <ul id="extension-tabs">
-                <li class="tab tab-active">Productivity</li>
-                <li class="tab">Engineering</li>
-                <li class="tab">Design</li>
-                <li class="tab">Writing</li>
+                <li class="tab tab-active"><span>Productivity</span></li>
+                <li class="tab"><span>Engineering</span></li>
+                <li class="tab"><span>Design</span></li>
+                <li class="tab"><span>Writing</span></li>
             </ul>
         </div>
         <div id="extension-body">
-            <div class="cards" id="productivity-cards">
+            <div class="cards cards-show" id="productivity-cards">
                 <article class="card">
                     <div class="card-content">
                         <div class="card-text">
@@ -134,8 +189,7 @@
                             <b class="text-primary">Linear</b>
                         </div>
                         <p class="text-primary">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur est itaque
-                            modi officiis quam vitae. Iste, iure
+                            Create,search and modify your issues without leaving your keyboard
                         </p>
                     </div>
                     <img alt="" class="card-bg" src="./raycast-assets/images/apps/illustrations/linear-web.png">
@@ -147,8 +201,7 @@
                             <b class="text-primary">Google Translate</b>
                         </div>
                         <p class="text-primary">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur est itaque
-                            modi officiis quam vitae. Iste, iure
+                            Use Google Translate to effortlessly translate into multiple languages
                         </p>
                     </div>
                     <img alt="" class="card-bg"
@@ -161,13 +214,14 @@
                             <b class="text-primary">Spotify</b>
                         </div>
                         <p class="text-primary">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur est itaque
-                            modi officiis quam vitae. Iste, iure
+                            Search for music and podcasts,browse your library and control playback.
                         </p>
                     </div>
                     <img alt="" class="card-bg"
                          src="./raycast-assets/images/apps/illustrations/spotify-web.png">
                 </article>
+
+
                 <article class="card">
                     <div class="card-content">
                         <div class="card-text">
@@ -175,88 +229,983 @@
                             <b class="text-primary">Arc</b>
                         </div>
                         <p class="text-primary">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur est itaque
-                            modi officiis quam vitae. Iste, iure
+                            Navigate your open tabs or search through your browser history
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg" src="./raycast-assets/images/apps/illustrations/arc-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/tiny-png-icon.png">
+                            <b class="text-primary">Tiny Png</b>
+                        </div>
+                        <p class="text-primary">
+                            Compress the selected images in Finder with TinyPNG
                         </p>
                     </div>
                     <img alt="" class="card-bg"
-                         src="./raycast-assets/images/apps/illustrations/arc-web.png">
+                         src="./raycast-assets/images/apps/illustrations/tiny-png-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/1password-icon.png">
+                            <b class="text-primary">1Password</b>
+                        </div>
+                        <p class="text-primary">
+                            Easily grab any password or credential from your 1Password vaults.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/1password-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/jira-icon.png">
+                            <b class="text-primary">Jira</b>
+                        </div>
+                        <p class="text-primary">
+                            Manage your JIRA issues and sprints without leaving your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/jira-web.png">
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/slack-icon.png">
+                            <b class="text-primary">Slack</b>
+                        </div>
+                        <p class="text-primary">
+                            Set your presence, see unread messages and search your chats.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/slack-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/zoom-icon.png">
+                            <b class="text-primary">Zoom</b>
+                        </div>
+                        <p class="text-primary">
+                            See your upcoming calls and jump straight into them from Raycast.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/jira-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/timers-icon.png">
+                            <b class="text-primary">Timers</b>
+                        </div>
+                        <p class="text-primary">
+                            Start stopwatches and timers to keep track of your daily tasks.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/timers-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/pomodoro-icon.png">
+                            <b class="text-primary">Pomodoro</b>
+                        </div>
+                        <p class="text-primary">
+                            Control pomodoro timers and see the current interval in the menu bar.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/pomodoro-web.png">
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/obsidian-icon.png">
+                            <b class="text-primary">Obsidian</b>
+                        </div>
+                        <p class="text-primary">
+                            Capture information, manage tasks, and attach notes to your menu bar
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/obsidian-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/google-chrome-icon.png">
+                            <b class="text-primary">Google Chrome</b>
+                        </div>
+                        <p class="text-primary">
+                            Search the web, open bookmarks and switch tabs without leaving your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/google-chrome-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/cleanshotx-icon.png">
+                            <b class="text-primary">Cleanshot X</b>
+                        </div>
+                        <p class="text-primary">
+                            Trigger CleanShot X screen captures right from your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/timers-web.png">
+                </article>
+                <article class="card card-more">
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/other/more-extensions.png">
+                    <div class="card-content">
+                        <strong class="text-primary">Plus thousands more...</strong>
+                        <div class="text-primary">Browse the store &rightarrow;</div>
+                    </div>
                 </article>
             </div>
             <div class="cards" id="engineering-cards">
-
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/linear-icon.png">
+                            <b class="text-primary">Linear</b>
+                        </div>
+                        <p class="text-primary">
+                            Create,search and modify your issues without leaving your keyboard
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/linear-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/google-chrome-icon.png">
+                            <b class="text-primary">Google Chrome</b>
+                        </div>
+                        <p class="text-primary">
+                            Search the web, open bookmarks and switch tabs without leaving your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/google-chrome-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/cleanshotx-icon.png">
+                            <b class="text-primary">Cleanshot X</b>
+                        </div>
+                        <p class="text-primary">
+                            Trigger CleanShot X screen captures right from your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/timers-web.png">
+                </article>
+                <article class="card card-more">
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/other/more-extensions.png">
+                    <div class="card-content">
+                        <strong class="text-primary">Plus thousands more...</strong>
+                        <div class="text-primary">Browse the store &rightarrow;</div>
+                    </div>
+                </article>
             </div>
-            <div class="cards" id="design-cards">
+            <div class="cards cards-show" id="design-cards">
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/linear-icon.png">
+                            <b class="text-primary">Linear</b>
+                        </div>
+                        <p class="text-primary">
+                            Create,search and modify your issues without leaving your keyboard
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg" src="./raycast-assets/images/apps/illustrations/linear-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/google-translate-icon.png">
+                            <b class="text-primary">Google Translate</b>
+                        </div>
+                        <p class="text-primary">
+                            Use Google Translate to effortlessly translate into multiple languages
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/google-translate-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/spotify-icon.png">
+                            <b class="text-primary">Spotify</b>
+                        </div>
+                        <p class="text-primary">
+                            Search for music and podcasts,browse your library and control playback.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/spotify-web.png">
+                </article>
 
+
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/arc-icon.png">
+                            <b class="text-primary">Arc</b>
+                        </div>
+                        <p class="text-primary">
+                            Navigate your open tabs or search through your browser history
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg" src="./raycast-assets/images/apps/illustrations/arc-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/tiny-png-icon.png">
+                            <b class="text-primary">Tiny Png</b>
+                        </div>
+                        <p class="text-primary">
+                            Compress the selected images in Finder with TinyPNG
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/tiny-png-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/1password-icon.png">
+                            <b class="text-primary">1Password</b>
+                        </div>
+                        <p class="text-primary">
+                            Easily grab any password or credential from your 1Password vaults.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/1password-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/jira-icon.png">
+                            <b class="text-primary">Jira</b>
+                        </div>
+                        <p class="text-primary">
+                            Manage your JIRA issues and sprints without leaving your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/jira-web.png">
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/slack-icon.png">
+                            <b class="text-primary">Slack</b>
+                        </div>
+                        <p class="text-primary">
+                            Set your presence, see unread messages and search your chats.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/slack-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/zoom-icon.png">
+                            <b class="text-primary">Zoom</b>
+                        </div>
+                        <p class="text-primary">
+                            See your upcoming calls and jump straight into them from Raycast.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/jira-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/timers-icon.png">
+                            <b class="text-primary">Timers</b>
+                        </div>
+                        <p class="text-primary">
+                            Start stopwatches and timers to keep track of your daily tasks.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/timers-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/pomodoro-icon.png">
+                            <b class="text-primary">Pomodoro</b>
+                        </div>
+                        <p class="text-primary">
+                            Control pomodoro timers and see the current interval in the menu bar.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/pomodoro-web.png">
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/obsidian-icon.png">
+                            <b class="text-primary">Obsidian</b>
+                        </div>
+                        <p class="text-primary">
+                            Capture information, manage tasks, and attach notes to your menu bar
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/obsidian-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/google-chrome-icon.png">
+                            <b class="text-primary">Google Chrome</b>
+                        </div>
+                        <p class="text-primary">
+                            Search the web, open bookmarks and switch tabs without leaving your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/google-chrome-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/cleanshotx-icon.png">
+                            <b class="text-primary">Cleanshot X</b>
+                        </div>
+                        <p class="text-primary">
+                            Trigger CleanShot X screen captures right from your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/timers-web.png">
+                </article>
+                <article class="card card-more">
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/other/more-extensions.png">
+                    <div class="card-content">
+                        <strong class="text-primary">Plus thousands more...</strong>
+                        <div class="text-primary">Browse the store &rightarrow;</div>
+                    </div>
+                </article>
             </div>
-            <div class="cards" id="writing-cards">
+            <div class="cards cards-show" id="writing-cards">
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/linear-icon.png">
+                            <b class="text-primary">Linear</b>
+                        </div>
+                        <p class="text-primary">
+                            Create,search and modify your issues without leaving your keyboard
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg" src="./raycast-assets/images/apps/illustrations/linear-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/google-translate-icon.png">
+                            <b class="text-primary">Google Translate</b>
+                        </div>
+                        <p class="text-primary">
+                            Use Google Translate to effortlessly translate into multiple languages
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/google-translate-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/spotify-icon.png">
+                            <b class="text-primary">Spotify</b>
+                        </div>
+                        <p class="text-primary">
+                            Search for music and podcasts,browse your library and control playback.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/spotify-web.png">
+                </article>
 
+
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/arc-icon.png">
+                            <b class="text-primary">Arc</b>
+                        </div>
+                        <p class="text-primary">
+                            Navigate your open tabs or search through your browser history
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg" src="./raycast-assets/images/apps/illustrations/arc-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/tiny-png-icon.png">
+                            <b class="text-primary">Tiny Png</b>
+                        </div>
+                        <p class="text-primary">
+                            Compress the selected images in Finder with TinyPNG
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/tiny-png-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/1password-icon.png">
+                            <b class="text-primary">1Password</b>
+                        </div>
+                        <p class="text-primary">
+                            Easily grab any password or credential from your 1Password vaults.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/1password-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/jira-icon.png">
+                            <b class="text-primary">Jira</b>
+                        </div>
+                        <p class="text-primary">
+                            Manage your JIRA issues and sprints without leaving your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/jira-web.png">
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/slack-icon.png">
+                            <b class="text-primary">Slack</b>
+                        </div>
+                        <p class="text-primary">
+                            Set your presence, see unread messages and search your chats.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/slack-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/zoom-icon.png">
+                            <b class="text-primary">Zoom</b>
+                        </div>
+                        <p class="text-primary">
+                            See your upcoming calls and jump straight into them from Raycast.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/jira-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/timers-icon.png">
+                            <b class="text-primary">Timers</b>
+                        </div>
+                        <p class="text-primary">
+                            Start stopwatches and timers to keep track of your daily tasks.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/timers-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/pomodoro-icon.png">
+                            <b class="text-primary">Pomodoro</b>
+                        </div>
+                        <p class="text-primary">
+                            Control pomodoro timers and see the current interval in the menu bar.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/pomodoro-web.png">
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/obsidian-icon.png">
+                            <b class="text-primary">Obsidian</b>
+                        </div>
+                        <p class="text-primary">
+                            Capture information, manage tasks, and attach notes to your menu bar
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/obsidian-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/google-chrome-icon.png">
+                            <b class="text-primary">Google Chrome</b>
+                        </div>
+                        <p class="text-primary">
+                            Search the web, open bookmarks and switch tabs without leaving your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/google-chrome-web.png">
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <img alt="" src="./raycast-assets/images/apps/icons/cleanshotx-icon.png">
+                            <b class="text-primary">Cleanshot X</b>
+                        </div>
+                        <p class="text-primary">
+                            Trigger CleanShot X screen captures right from your keyboard.
+                        </p>
+                    </div>
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/illustrations/timers-web.png">
+                </article>
+                <article class="card card-more">
+                    <img alt="" class="card-bg"
+                         src="./raycast-assets/images/apps/other/more-extensions.png">
+                    <div class="card-content">
+                        <strong class="text-primary">Plus thousands more...</strong>
+                        <div class="text-primary">Browse the store &rightarrow;</div>
+                    </div>
+                </article>
             </div>
         </div>
         <div id="extension-bottom">
+            <a href="">Browse thousands more &rightarrow;</a>
+            <div>
+                <button class="btn-extension" id="btn-left">
+                    <svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.25 12.25 5.75 8l4.5-4.25" stroke="white" stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="1.5"></path>
+                    </svg>
+                </button>
+                <button class="btn-extension" id="btn-right">
+                    <svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.75 3.75 10.25 8l-4.5 4.25" stroke="white" stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="1.5"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--  extra features   -->
+    <section aria-label="Section About Extra Features" class="container" id="extra-section">
+        <article id="extra-left">
+            <div id="extra-links">
+                <strong class="text-primary">
+                    What else can Raycast do?
+                </strong>
+                <a class="text-secondary extra-active" href="#">It can take notes.</a>
+                <a class="text-secondary" href="#">Track your flights.</a>
+                <a class="text-secondary" href="#">Convert anything.</a>
+                <a class="text-secondary" href="#">Search files.</a>
+
+                <a class="text-secondary" href="#">Run scripts.</a>
+                <a class="text-secondary" href="#">Manage your windows.</a>
+                <a class="text-secondary" href="#">Plan your day.</a>
+                <a class="text-secondary" href="#">Remind you of stuff.</a>
+
+                <a class="text-secondary" href="#">Translate into any language.</a>
+                <a class="text-secondary" href="#">Insert Emojis.</a>
+                <a class="text-secondary" href="#">Find text in screenshots.</a>
+                <div class="text-secondary" href="#">And much, much more.</div>
+            </div>
+            <div id="floating-notes">
+                <div class="floating-note floating-active">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+                <div class="floating-note">
+                    <div>
+                        <img alt="Icon for Floating Note" src="raycast-assets/images/apps/icons/pomodoro-icon.png">
+                        <strong class="text-primary">Floating Notes</strong>
+                    </div>
+                    <p class="text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam cupiditate.
+                    </p>
+                </div>
+            </div>
+
+        </article>
+        <div id="extra-right">
+            <div>
+                <img alt="" class="extra-img extra-img-active" src="raycast-assets/images/slides/calculator.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/emoji-picker.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/file-search.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/flight-tracker.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/floating-notes.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/reminders.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/schedule.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/screenshot-search.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/script-commands.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/translator.png">
+                <div class="extra-img-overlay"></div>
+            </div>
+            <div>
+                <img alt="" class="extra-img" src="raycast-assets/images/slides/window-management.png">
+                <div class="extra-img-overlay"></div>
+            </div>
 
         </div>
     </section>
+
+    <!--  keyboard section  -->
+    <section aria-label="Section About Download Raycast" id="keyboard-section">
+        <div class="keyboard">
+            <div class="row">
+                <div class="key dual"><span class="primary">~</span><span class="secondary">`</span></div>
+                <div class="key dual"><span class="primary">1</span><span class="secondary">!</span></div>
+                <div class="key dual"><span class="primary">2</span><span class="secondary">@</span></div>
+                <div class="key dual"><span class="primary">3</span><span class="secondary">#</span></div>
+                <div class="key dual"><span class="primary">4</span><span class="secondary">$</span></div>
+                <div class="key dual"><span class="primary">5</span><span class="secondary">%</span></div>
+                <div class="key dual"><span class="primary">6</span><span class="secondary">^</span></div>
+                <div class="key dual"><span class="primary">7</span><span class="secondary">&</span></div>
+                <div class="key dual"><span class="primary">8</span><span class="secondary">*</span></div>
+                <div class="key dual"><span class="primary">9</span><span class="secondary">(</span></div>
+                <div class="key dual"><span class="primary">0</span><span class="secondary">)</span></div>
+                <div class="key dual"><span class="primary">-</span><span class="secondary">_</span></div>
+                <div class="key dual"><span class="primary">=</span><span class="secondary">+</span></div>
+                <div class="key delete">delete</div>
+            </div>
+            <div class="row">
+                <div class="key ktab">tab</div>
+                <div class="key">Q</div>
+                <div class="key">W</div>
+                <div class="key">E</div>
+                <div class="key">R</div>
+                <div class="key">T</div>
+                <div class="key">Y</div>
+                <div class="key">U</div>
+                <div class="key">I</div>
+                <div class="key">O</div>
+                <div class="key">P</div>
+                <div class="key">[</div>
+                <div class="key">]</div>
+                <div class="key backslash">\</div>
+            </div>
+            <div class="row">
+                <div class="key caps">caps lock</div>
+                <div class="key">A</div>
+                <div class="key">S</div>
+                <div class="key">D</div>
+                <div class="key">F</div>
+                <div class="key">G</div>
+                <div class="key">H</div>
+                <div class="key">J</div>
+                <div class="key">K</div>
+                <div class="key">L</div>
+                <div class="key">;</div>
+                <div class="key">'</div>
+                <div class="key enter">return</div>
+            </div>
+            <div class="row">
+                <div class="key shift">
+                    <svg fill="none" height="21" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.632 20.41h6.357q1.215 0 1.835-.662.621-.662.621-1.794v-4.611h4.175q.723 0 1.22-.41.5-.409.499-1.077 0-.423-.191-.744a3.6 3.6 0 0 0-.505-.648l-9.454-9.413a2.5 2.5 0 0 0-.635-.464 1.61 1.61 0 0 0-1.473 0 2.7 2.7 0 0 0-.648.464l-9.44 9.413a3.3 3.3 0 0 0-.526.655q-.184.315-.184.737 0 .668.504 1.078.506.409 1.215.409h4.174v4.611q0 1.133.621 1.794.621.662 1.835.662m.205-1.897a.6.6 0 0 1-.444-.17.6.6 0 0 1-.17-.444v-6.03q0-.368-.382-.368H2.998q-.082 0-.082-.068 0-.041.04-.096l8.718-8.635a.19.19 0 0 1 .137-.055q.082 0 .136.055l8.718 8.635q.054.056.054.096 0 .068-.082.068h-4.856q-.382 0-.382.368v6.03q0 .26-.178.437a.6.6 0 0 1-.436.177z"
+                              fill="#D8D8D8"
+                              style="fill:color(display-p3 .8458 .8458 .8458);fill-opacity:1"></path>
+                    </svg>
+                </div>
+                <div class="key">Z</div>
+                <div class="key">X</div>
+                <div class="key">C</div>
+                <div class="key">V</div>
+                <div class="key">B</div>
+                <div class="key">N</div>
+                <div class="key">M</div>
+                <div class="key dual center"><span class="primary"><</span><span class="secondary">,</span></div>
+                <div class="key dual center"><span class="primary">> </span><span class="secondary">.</span></div>
+                <div class="key dual center"><span class="primary">?</span><span class="secondary">/</span></div>
+                <div class="key shift">
+                    <svg fill="none" height="21" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.632 20.41h6.357q1.215 0 1.835-.662.621-.662.621-1.794v-4.611h4.175q.723 0 1.22-.41.5-.409.499-1.077 0-.423-.191-.744a3.6 3.6 0 0 0-.505-.648l-9.454-9.413a2.5 2.5 0 0 0-.635-.464 1.61 1.61 0 0 0-1.473 0 2.7 2.7 0 0 0-.648.464l-9.44 9.413a3.3 3.3 0 0 0-.526.655q-.184.315-.184.737 0 .668.504 1.078.506.409 1.215.409h4.174v4.611q0 1.133.621 1.794.621.662 1.835.662m.205-1.897a.6.6 0 0 1-.444-.17.6.6 0 0 1-.17-.444v-6.03q0-.368-.382-.368H2.998q-.082 0-.082-.068 0-.041.04-.096l8.718-8.635a.19.19 0 0 1 .137-.055q.082 0 .136.055l8.718 8.635q.054.056.054.096 0 .068-.082.068h-4.856q-.382 0-.382.368v6.03q0 .26-.178.437a.6.6 0 0 1-.436.177z"
+                              fill="#D8D8D8"
+                              style="fill:color(display-p3 .8458 .8458 .8458);fill-opacity:1"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="row">
+                <div class="key dual"><span class="primary">~</span><span class="secondary">`</span></div>
+                <div class="key dual"><span class="primary">^</span><span class="secondary">control</span></div>
+                <div class="key dual"><span class="primary"><svg fill="none" height="21"
+                                                                 width="24" xmlns="http://www.w3.org/2000/svg"><path
+                        d="M7.371.76H2.16q-.502 0-.844.327a1.07 1.07 0 0 0-.341.802q0 .488.341.815.342.327.844.328h4.655q.278 0 .48.125a.9.9 0 0 1 .328.39l6.996 15.777q.334.753.865 1.094t1.324.342h5.24q.488 0 .836-.335.35-.335.349-.794a1.08 1.08 0 0 0-.349-.808 1.17 1.17 0 0 0-.836-.335h-4.641q-.613 0-.864-.516L9.573 2.195a2.35 2.35 0 0 0-.878-1.052A2.36 2.36 0 0 0 7.371.76m14.676 0h-6.76a1.16 1.16 0 0 0-.836.32 1.06 1.06 0 0 0-.334.795q0 .487.334.808.335.32.836.32h6.76q.501 0 .836-.32t.335-.808q0-.474-.335-.795a1.16 1.16 0 0 0-.836-.32"
+                        fill="#D8D8D8"
+                        style="fill:color(display-p3 .8458 .8458 .8458);fill-opacity:1"></path></svg></span><span
+                        class="secondary">option</span></div>
+                <div class="key dual key-highlight"><span class="primary"><svg fill="none" height="21"
+                                                                               width="21"
+                                                                               xmlns="http://www.w3.org/2000/svg"><path
+                        d="M6.593 8.447v4.626H4.611q-1.065 0-1.942.505a3.84 3.84 0 0 0-1.396 1.37 3.7 3.7 0 0 0-.52 1.941q0 1.066.52 1.942a4 4 0 0 0 1.396 1.403q.876.526 1.942.526t1.942-.526a4 4 0 0 0 1.395-1.403 3.74 3.74 0 0 0 .52-1.942V14.92h4.558v1.97q0 1.065.526 1.941.525.877 1.396 1.403t1.935.526q1.066 0 1.942-.526a4 4 0 0 0 1.396-1.403q.52-.876.52-1.942 0-1.078-.52-1.942a3.84 3.84 0 0 0-3.338-1.874h-1.969V8.447h1.97q1.065 0 1.941-.506a3.84 3.84 0 0 0 1.396-1.369q.52-.862.52-1.942 0-1.065-.52-1.942a4 4 0 0 0-1.396-1.402A3.7 3.7 0 0 0 16.883.76q-1.065 0-1.935.526-.87.525-1.396 1.402a3.7 3.7 0 0 0-.526 1.942V6.6H8.468V4.63a3.74 3.74 0 0 0-.52-1.942 4 4 0 0 0-1.395-1.402A3.7 3.7 0 0 0 4.61.76q-1.065 0-1.942.526-.877.525-1.396 1.402a3.74 3.74 0 0 0-.52 1.942q0 1.08.52 1.942A3.84 3.84 0 0 0 4.61 8.447zM8.468 13.1V8.42h4.558v4.68zM4.61 6.626q-.81 0-1.396-.586a1.92 1.92 0 0 1-.587-1.41q0-.809.587-1.396a1.9 1.9 0 0 1 1.396-.586q.81 0 1.395.586.588.588.587 1.396v1.996zm0 8.254h1.982v1.996q0 .81-.587 1.396a1.9 1.9 0 0 1-1.395.586q-.81 0-1.396-.586a1.9 1.9 0 0 1-.587-1.396q0-.823.587-1.41a1.9 1.9 0 0 1 1.396-.586m12.272-8.254h-1.969V4.63q0-.809.58-1.396t1.39-.586q.808 0 1.395.586.587.588.587 1.396 0 .823-.587 1.41a1.9 1.9 0 0 1-1.396.586m0 8.254q.81 0 1.396.586.587.587.587 1.41 0 .81-.587 1.396a1.9 1.9 0 0 1-1.396.586q-.81 0-1.389-.586a1.92 1.92 0 0 1-.58-1.396V14.88z"
+                        fill="#D8D8D8"
+                        style="fill:color(display-p3 .8458 .8458 .8458);fill-opacity:1"></path></svg></span><span
+                        class="secondary">command</span></div>
+                <div class="key space key-highlight"></div>
+                <div class="key dual"><span class="primary"><svg fill="none" height="21"
+                                                                 width="21" xmlns="http://www.w3.org/2000/svg"><path
+                        d="M6.593 8.447v4.626H4.611q-1.065 0-1.942.505a3.84 3.84 0 0 0-1.396 1.37 3.7 3.7 0 0 0-.52 1.941q0 1.066.52 1.942a4 4 0 0 0 1.396 1.403q.876.526 1.942.526t1.942-.526a4 4 0 0 0 1.395-1.403 3.74 3.74 0 0 0 .52-1.942V14.92h4.558v1.97q0 1.065.526 1.941.525.877 1.396 1.403t1.935.526q1.066 0 1.942-.526a4 4 0 0 0 1.396-1.403q.52-.876.52-1.942 0-1.078-.52-1.942a3.84 3.84 0 0 0-3.338-1.874h-1.969V8.447h1.97q1.065 0 1.941-.506a3.84 3.84 0 0 0 1.396-1.369q.52-.862.52-1.942 0-1.065-.52-1.942a4 4 0 0 0-1.396-1.402A3.7 3.7 0 0 0 16.883.76q-1.065 0-1.935.526-.87.525-1.396 1.402a3.7 3.7 0 0 0-.526 1.942V6.6H8.468V4.63a3.74 3.74 0 0 0-.52-1.942 4 4 0 0 0-1.395-1.402A3.7 3.7 0 0 0 4.61.76q-1.065 0-1.942.526-.877.525-1.396 1.402a3.74 3.74 0 0 0-.52 1.942q0 1.08.52 1.942A3.84 3.84 0 0 0 4.61 8.447zM8.468 13.1V8.42h4.558v4.68zM4.61 6.626q-.81 0-1.396-.586a1.92 1.92 0 0 1-.587-1.41q0-.809.587-1.396a1.9 1.9 0 0 1 1.396-.586q.81 0 1.395.586.588.588.587 1.396v1.996zm0 8.254h1.982v1.996q0 .81-.587 1.396a1.9 1.9 0 0 1-1.395.586q-.81 0-1.396-.586a1.9 1.9 0 0 1-.587-1.396q0-.823.587-1.41a1.9 1.9 0 0 1 1.396-.586m12.272-8.254h-1.969V4.63q0-.809.58-1.396t1.39-.586q.808 0 1.395.586.587.588.587 1.396 0 .823-.587 1.41a1.9 1.9 0 0 1-1.396.586m0 8.254q.81 0 1.396.586.587.587.587 1.41 0 .81-.587 1.396a1.9 1.9 0 0 1-1.396.586q-.81 0-1.389-.586a1.92 1.92 0 0 1-.58-1.396V14.88z"
+                        fill="#D8D8D8"
+                        style="fill:color(display-p3 .8458 .8458 .8458);fill-opacity:1"></path></svg></span><span
+                        class="secondary">command</span></div>
+                <div class="key dual"><span class="primary"><svg fill="none" height="21"
+                                                                 width="24" xmlns="http://www.w3.org/2000/svg"><path
+                        d="M7.371.76H2.16q-.502 0-.844.327a1.07 1.07 0 0 0-.341.802q0 .488.341.815.342.327.844.328h4.655q.278 0 .48.125a.9.9 0 0 1 .328.39l6.996 15.777q.334.753.865 1.094t1.324.342h5.24q.488 0 .836-.335.35-.335.349-.794a1.08 1.08 0 0 0-.349-.808 1.17 1.17 0 0 0-.836-.335h-4.641q-.613 0-.864-.516L9.573 2.195a2.35 2.35 0 0 0-.878-1.052A2.36 2.36 0 0 0 7.371.76m14.676 0h-6.76a1.16 1.16 0 0 0-.836.32 1.06 1.06 0 0 0-.334.795q0 .487.334.808.335.32.836.32h6.76q.501 0 .836-.32t.335-.808q0-.474-.335-.795a1.16 1.16 0 0 0-.836-.32"
+                        fill="#D8D8D8"
+                        style="fill:color(display-p3 .8458 .8458 .8458);fill-opacity:1"></path></svg></span><span
+                        class="secondary">option</span></div>
+                <div class="key dual"><span class="primary">^</span><span class="secondary">control</span></div>
+            </div>
+        </div>
+
+        <div id="keyboard-description">
+            <div>
+                <strong class="text-primary">Take the short way</strong>
+                <div class="text-secondary">Download and use Raycast for free.
+                </div>
+            </div>
+            <button class="btn-download">
+                <img alt="Logo of Apple" src="./raycast-assets/svgs/logo/logo-apple.svg"
+                     srcset="">Download
+            </button>
+            <div class="text-secondary">
+                v.1.73.2 | macOS 12+ | Install via homebrew
+            </div>
+        </div>
+
+    </section>
 </main>
 <!--footer-->
-<footer class="container" role="contentinfo">
-    <!--    footer navigations-->
-    <div>
-        <b class="text-primary mb-2">Product</b>
-        <a href="#">Store</a>
-        <a href="#">Pro</a>
-        <a href="#">Teams</a>
-        <a href="#">Pricing</a>
-        <a href="#">Changelog</a>
-        <a href="#">Browser Extension</a>
-        <a href="#">Developers</a>
-        <a href="#">API Docs <img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">Manual<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">Troubleshooting<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">FAQ</a>
-    </div>
-    <div>
-        <b class="text-primary mb-2">Company</b>
-        <a href="#">Careers</a>
-        <a href="#">Manifesto</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">DPA</a>
-        <a href="#">Press Kit <img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">Contact<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-    </div>
-    <div>
-        <b class="text-primary mb-2">Community</b>
-        <a href="#">Community</a>
-        <a href="#">Slack</a>
-        <a href="#">X/Twitter<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">GitHub<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-    </div>
-    <div>
-        <b class="text-primary mb-2">By Raycast</b>
-        <a href="#">Snippets<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">Prompts<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">Chat Presets<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">ray.so<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">Icon Maker<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">Merch<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
-        <a href="#">Wallpapers</a>
-    </div>
-    <!--    footer newsletter-->
-    <article id="newsletter">
+<footer role="contentinfo">
+    <img alt="Footer Background Image" id="img-footer" src="raycast-assets/images/backgrounds/bg.png">
+    <div class="container">
+        <!--    footer navigations-->
         <div>
-            <b class="text-primary">Subscribe to our newsletter</b>
-            <div class="text-secondary">Get product updates and news in your inbox.No spam.</div>
+            <b class="text-primary mb-2">Product</b>
+            <a href="#">Store</a>
+            <a href="#">Pro</a>
+            <a href="#">Teams</a>
+            <a href="#">Pricing</a>
+            <a href="#">Changelog</a>
+            <a href="#">Browser Extension</a>
+            <a href="#">Developers</a>
+            <a href="#">API Docs <img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">Manual<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">Troubleshooting<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">FAQ</a>
         </div>
-        <div id="newsletter-form">
+        <div>
+            <b class="text-primary mb-2">Company</b>
+            <a href="#">Careers</a>
+            <a href="#">Manifesto</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">DPA</a>
+            <a href="#">Press Kit <img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">Contact<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+        </div>
+        <div>
+            <b class="text-primary mb-2">Community</b>
+            <a href="#">Community</a>
+            <a href="#">Slack</a>
+            <a href="#">X/Twitter<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">GitHub<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+        </div>
+        <div>
+            <b class="text-primary mb-2">By Raycast</b>
+            <a href="#">Snippets<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">Prompts<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">Chat Presets<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">ray.so<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">Icon Maker<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">Merch<img alt="" src="./raycast-assets/svgs/icon/icon-arrow-top-right.svg"></a>
+            <a href="#">Wallpapers</a>
+        </div>
+        <!--    footer newsletter-->
+        <article id="newsletter">
             <div>
-                <input id="email" name="email" placeholder="bnjaner@cplus.com" type="email">
-                <button class="btn-subscribe">Subscribe</button>
+                <b class="text-primary">Subscribe to our newsletter</b>
+                <div class="text-secondary">Get product updates and news in your inbox.No spam.</div>
             </div>
-            <small>By submitting your email address, you agree to receive Raycasts's monthly newsletter. For more
-                information, please read our privacy policy. You can always withdraw your consent.</small>
-        </div>
-    </article>
+            <div id="newsletter-form">
+                <div>
+                    <input id="email" name="email" placeholder="bnjaner@cplus.com" type="email">
+                    <div class="btn-subscribe-container">
+                        <button class="btn-subscribe">Subscribe</button>
+                        <div class="btn-subscribe-bg"></div>
+
+                    </div>
+                </div>
+                <small class="text-secondary">By submitting your email address, you agree to receive Raycasts's monthly
+                    newsletter. For more
+                    information, please read our privacy policy. You can always withdraw your consent.</small>
+            </div>
+        </article>
+    </div>
+
 </footer>
 <!--include the js file-->
 <script src="app.js"></script>
